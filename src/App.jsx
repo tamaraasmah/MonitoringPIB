@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import latar2 from './assets/latar2.png';
+import { BrowserRouter } from "react-router-dom";
 
 const Nav = () => {
+  <BrowserRouter basename="/repo-name"></BrowserRouter>
   const [activeIndex, setActiveIndex] = useState(0);
   const itemRefs = useRef([]);
 
@@ -81,6 +83,7 @@ const Nav = () => {
       </div>
     </div>
   );
+  <BrowserRouter/>
 };
 
 export default Nav;
